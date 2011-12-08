@@ -58,16 +58,16 @@ $(document).ready(function(){
 				left: left
 			}, options.speed, options.tween);
 	}
-	var $target = $('.uncover p');
-	var originalLeft = $target.css('left');
-	$('.uncover a').click(function(){
-		console.log($target.css('left'));
-		if ($target.css('left') == originalLeft) {
-			newUnc = '-' + $('.uncover ul').outerWidth();
+	var $uncover = $('.uncover');
+	var $uncPanel = $uncover.children('ul');
+	var $target = $uncover.children('p');
+	$target.find('a').click(function(){
+		if ($target.css('left') == '-' + $uncPanel.outerWidth() + 'px') {
+			newUnc = 0;
 		} else {
-			newUnc = originalLeft;
+			newUnc = '-' + $uncPanel.outerWidth();
 		}
-		$('.uncover p').animate({
+		$target.animate({
 			left: newUnc
 		}, options.speed);
 	});
@@ -156,6 +156,10 @@ a.close:hover {
 	background: blue;
 	position: relative;
 	z-index: 4;
+	left: 0;
+}
+.uncover p a {
+	float: right;
 }
 .behold {
 	color: white;
