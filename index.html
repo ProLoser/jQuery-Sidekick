@@ -81,13 +81,13 @@ $(document).ready(function(){
 		if ($li.hasClass('open')) {
 			if (options.animateSwitching) {
 				$li.removeClass('open', options.speed);
-				$('accordion').removeClass('open', options.speed);
+				$('.accordion').removeClass('open', options.speed);
 			} else {
 				$li.removeClass('open');
-				$('accordion').removeClass('open');
+				$('.accordion').removeClass('open');
 			}
 		} else {
-			$('accordion').addClass('open', options.speed);
+			$('.accordion').addClass('open', options.speed);
 			$li.addClass('open', options.speed).siblings().removeClass('open', options.speed);
 		}
 	});
