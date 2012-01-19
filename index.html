@@ -87,7 +87,7 @@ $(document).ready(function(){
 			}
 		} else {
 			$('accordion').addClass('open', options.speed);
-			$li.addClass('open', speed).siblings().removeClass('open', options.speed);
+			$li.addClass('open', options.speed).siblings().removeClass('open', options.speed);
 		}
 	});
 	$('.accordion a.close').click(function(e){
