@@ -193,7 +193,7 @@ a.close:hover {
 }
 
 
-.sidebar {
+.accordion {
   margin-bottom: 20px;
   padding: 20px 0 0 0;
   position: absolute;
@@ -211,25 +211,25 @@ a.close:hover {
   z-index: 10000;
   width: 40px;
 }
-.sidebar.open {
+.accordion.open {
   margin-left: 600px;
   padding-left: 350px;
 }
-.sidebar.floating {
+.accordion.floating {
   position: fixed;
   margin-top: 40px;
 }
-.sidebar > li {
+.accordion > li {
   width: 390px;
   height: 80px;
   margin: 5px 0;
   float: left;
 }
-.sidebar > li.open {
+.accordion > li.open {
   margin-left: -350px;
   height: auto;
 }
-.sidebar > li > form {
+.accordion > li > form {
   -moz-border-radius: 0 0 0 5px;
   -webkit-border-radius: 0 0 0 5px;
   -o-border-radius: 0 0 0 5px;
@@ -248,23 +248,23 @@ a.close:hover {
   float: left;
   margin: 0 0 5px 0;
 }
-.sidebar > li > form h3 {
+.accordion > li > form h3 {
   margin: 30px 0 0 10px;
 }
-.sidebar > li > form li {
+.accordion > li > form li {
   clear: left;
   margin: 10px 0 10px 20px;
   display: block;
   width: 300px;
   padding: 0;
 }
-.sidebar > li > form li label {
+.accordion > li > form li label {
   display: block;
 }
-.sidebar > li > form li input {
+.accordion > li > form li input {
   width: 300px;
 }
-.sidebar > li > form li textarea {
+.accordion > li > form li textarea {
   width: 300px;
   height: 180px;
 }
@@ -294,7 +294,7 @@ a.open {
 </head>
 <body>
 <div id="body">
-	<ul class="sidebar">
+	<ul class="accordion">
 		<li>
 			<a class="open">
 				<img src="../images/icon-message.png" width="24" height="24" alt="Send Message"> 
