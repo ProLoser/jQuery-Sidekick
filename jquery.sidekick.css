@@ -1,0 +1,172 @@
+.sidekick {
+    height: 100%;
+	position: absolute;
+	/* Optional Fixed Position
+	position: fixed;
+	*/
+	float: left;
+	width: 100px;
+}
+.bar {
+	background: green;
+	text-align: center;
+	z-index: 10;
+	width: 100px;
+	height: 100%;
+}
+.panel {
+	background: red;
+	width: 200px;
+	z-index: 5;
+	left: -200px;
+	padding: 20px 0;
+}
+.bar, .panel {
+	position: absolute;
+}
+.bar li, .panel li {
+	list-style: none;
+	position: relative;
+}
+.bar a {
+	display: block;
+	padding: 10px 2px;
+}
+.bar a:hover {
+	background: yellow;
+	color: black;
+}
+.close {
+	position: absolute;
+	top: -15px;
+	right: 5px;
+	display: block;
+	text-decoration: none;
+	background: white;
+	color: black;
+}
+a.close:hover {
+	background: yellow;
+}
+.uncover .bar {
+	right: 0;
+	z-index: 3;
+	/* Optional Fixed Position
+	position: fixed;
+	*/
+}
+.uncover p {
+	background: blue;
+	position: relative;
+	z-index: 4;
+	left: 0;
+}
+.uncover p a {
+	float: right;
+}
+.behold {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	background: red;
+}
+
+
+.accordion {
+  margin-bottom: 20px;
+  padding: 20px 0 0 0;
+  position: absolute;
+  top: 0;
+  margin-left: 950px;
+  overflow: hidden;
+  min-height: 1000px;
+  -moz-border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px 0 0 3px;
+  -o-border-radius: 3px 0 0 3px;
+  -ms-border-radius: 3px 0 0 3px;
+  -khtml-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+  color: white;
+  z-index: 10000;
+  width: 40px;
+}
+.accordion.open {
+  margin-left: 600px;
+  padding-left: 350px;
+}
+.accordion.floating {
+  position: fixed;
+  margin-top: 40px;
+}
+.accordion > li {
+  width: 390px;
+  height: 80px;
+	list-style: none;
+  margin: 5px 0;
+  float: left;
+}
+.accordion > li.open {
+  margin-left: -350px;
+  height: auto;
+}
+.accordion > li > form {
+  -moz-border-radius: 0 0 0 5px;
+  -webkit-border-radius: 0 0 0 5px;
+  -o-border-radius: 0 0 0 5px;
+  -ms-border-radius: 0 0 0 5px;
+  -khtml-border-radius: 0 0 0 5px;
+  border-radius: 0 0 0 5px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #666666), color-stop(100%, #4d4d4d));
+  background-image: -webkit-linear-gradient(top, #666666 0%, #4d4d4d 100%);
+  background-image: -moz-linear-gradient(top, #666666 0%, #4d4d4d 100%);
+  background-image: -o-linear-gradient(top, #666666 0%, #4d4d4d 100%);
+  background-image: -ms-linear-gradient(top, #666666 0%, #4d4d4d 100%);
+  background-image: linear-gradient(top, #666666 0%, #4d4d4d 100%);
+  overflow: hidden;
+  width: 350px;
+  top: 84px;
+  float: left;
+  margin: 0 0 5px 0;
+}
+.accordion > li > form h3 {
+  margin: 30px 0 0 10px;
+}
+.accordion > li > form li {
+  clear: left;
+  margin: 10px 0 10px 20px;
+  display: block;
+  width: 300px;
+  padding: 0;
+}
+.accordion > li > form li label {
+  display: block;
+}
+.accordion > li > form li input {
+  width: 300px;
+}
+.accordion > li > form li textarea {
+  width: 300px;
+  height: 180px;
+}
+a.open {
+  -moz-border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  -o-border-radius: 5px 0 0 5px;
+  -ms-border-radius: 5px 0 0 5px;
+  -khtml-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+  float: left;
+  padding: 30px 8px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #666666), color-stop(100%, #4d4d4d));
+  background-image: -webkit-linear-gradient(top, #666666 0%, #4d4d4d 100%);
+  background-image: -moz-linear-gradient(top, #666666 0%, #4d4d4d 100%);
+  background-image: -o-linear-gradient(top, #666666 0%, #4d4d4d 100%);
+  background-image: -ms-linear-gradient(top, #666666 0%, #4d4d4d 100%);
+  background-image: linear-gradient(top, #666666 0%, #4d4d4d 100%);
+}
+
+.close {
+  float: right;
+  padding: 15px;
+  z-index: 9999;
+}
